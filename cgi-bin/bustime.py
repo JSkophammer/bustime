@@ -53,7 +53,7 @@ print "Content-Type: text/html\n\n"
 print """
 <html>
   <head>
-    <title>Hello World - First CGI Program</title>
+    <title>Bustime NYC</title>
     <style>
     #map {
         width: 500px;
