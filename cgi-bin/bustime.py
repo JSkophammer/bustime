@@ -14,7 +14,6 @@ def get_data(stop_id, url):
     url += urllib.urlencode({'MonitoringRef':stop_id, 'key': key})
     data = urllib.urlopen(url)
     js_data= json.load(data)
-    #json_file = json.dumps(js_data)
     bus_info = js_data["Siri"]["ServiceDelivery"]["StopMonitoringDelivery"][0]["MonitoredStopVisit"][0]["MonitoredVehicleJourney"]
     return bus_info
 
