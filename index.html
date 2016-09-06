@@ -6,20 +6,21 @@
     <title>Bustime NYC</title>
     <link media="screen" type="text/css" href="/css/mobile/mobile.css" rel="stylesheet"/>
 </head>
-<body background="/img/background.jpg">
+<body >
     <div id="banner">
         <h1>
-            <a href="/index"><img src="/img/banner.png" width="100%"/></a>
+            <a href=""><img src="/img/banner.png" width="100%"/></a>
         </h1>
     </div>
-    <div id="searchPanel">
-        <form id="index" name="index" action="#" onsubmit="return false;">
-            <input value="" placeholder="Enter Stop Code: " class="q" name="q" id="bustimesearch" type="text"/>
-            <input alt="search" id="submitButton" class="s" type="submit" onclick="getData();"/>
-            <input type="image" src="/img/search_icon.png" class="s"/>
+    <div id="userInput">
+        <form id="inputForm" name="inputForm" action="#" onsubmit="return false;">
+            <input value="" placeholder="Enter Stop Code: " class="textInput" name="textInput" id="bustimesearch" type="text"/>
+            <button type="submit" class="submitButton" id="submitButton" onclick="getData();">
+                <input type="image" src="/img/search_icon.png" class="submitButton"/>
+            </button>
         </form>
     </div>
-    <div id="content">
+    <div id="main">
         <?xml version="1.0" encoding="UTF-8"?>
         <div class="busmap">
             <div id="map"></div>
@@ -27,8 +28,8 @@
                 function initMap() {
                     var mapDiv = document.getElementById('map');
                     var map = new google.maps.Map(mapDiv, {
-                        center: {lat: 40.725687, lng: -73.804851},
-                        zoom: 15
+                        center: {lat: 40.7053111, lng: -74.0130556},
+                        zoom: 10
                     });
                 }
             </script>
@@ -37,32 +38,23 @@
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEhlW4EIYyjNSZupr0e3LceHgWHy6zijg&callback=initMap">
             </script>
         </div>
-        <div class="welcome">
-            <h3>Example searches:</h3>
-            <ul class="examples">
-                <li><span style="color:white;">Route: </span>&nbsp;B63 M5 Bx1</li>
-                <li><span style="color:white;">Intersection: </span>&nbsp;Main st and Kissena Bl</li>
-                <li><span style="color:white;">Stop Code: </span>&nbsp;200884</li>
-                <li><span style="color:white;">Location: </span>&nbsp;10304</li>
+        <div class="examples">
+            <h2>Example searches:</h2>
+            <ul>
+                <li>  <span style="color:white;">  Route: </span>&nbsp;B63 M5 Bx1</li>
+                <li>  <span style="color:white;">  Intersection: </span>&nbsp;Main st and Kissena Bl</li>
+                <li>  <span style="color:white;">  Stop Code: </span>&nbsp;200884</li>
+                <li>  <span style="color:white;">  Location: </span>&nbsp;10304</li>
             </ul>
         </div>
     </div>
     <div id="footer">
         <p>Help | Contact | <a href="//web.mta.info/default.html">MTA.info</a></p>
     </div>
-    <!--
-    <script type="text/javascript">
-		_gaq.push(['_setAccount', "UA-20899154-8"]);
-		_gaq.push(['_setDomainName', 'none']);
-		_gaq.push(['_setAllowLinker', true]);
-		_gaq.push(['_trackEvent', "Mobile Web", "Home", "[M: 0 S: 0]"]);
-		(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
-	</script>
-	-->
     <script>
     function getData(){
         var stopNum = document.getElementById('bustimesearch').value;
-        var url = 'http://localhost:8000/cgi-bin/bustime.py?StopId='+ stopNum;
+        var url = 'http://10.0.0.7:8000/cgi-bin/bustime.py?StopId='+ stopNum;
         window.open(url, "_self");
     }
     </script>

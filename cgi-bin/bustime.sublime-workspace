@@ -1,0 +1,261 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"2 + 2"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Jason/Programming/Web/DigitalAddicts/index.html",
+		"/Users/Jason/Sites/bustime/index.html",
+		"/Users/Jason/Sites/bustime/cgi-bin/bustime.py",
+		"/Users/Jason/Sites/bustime/cgi-bin/hello.py",
+		"/Users/Jason/Sites/bustime/cgi-bin/adder.py",
+		"/Users/Jason/Downloads/hello.cgi",
+		"/Users/Jason/Programming/Web/fullstack-course4-master/examples/Lecture12/css-syntax.html",
+		"/Library/WebServer/Documents/test.php",
+		"/Users/Jason/Programming/Python/bustime_nyc/test/<?php",
+		"/Users/Jason/Programming/Python/bustime_nyc/test/test.php",
+		"/Users/Jason/Programming/Python/bustime_nyc/test/index.html",
+		"/Users/Jason/Programming/Python/bustime_nyc/test/default.asp",
+		"/Users/Jason/Programming/Python/bustime_nyc/test_index.html",
+		"/Users/Jason/Programming/Python/bustime_nyc/test/test.asp",
+		"/Users/Jason/Programming/Web/coursera-test/site/index.html",
+		"/Users/Jason/Programming/Web/test_site/index.html",
+		"/Users/Jason/Documents/Brooklyn LAB Charter School",
+		"/Users/Jason/Documents/mySQLpass",
+		"/Users/Jason/Documents/breed_staffing",
+		"/Users/Jason/Documents/notes-08162016",
+		"/Users/Jason/Documents/bustime",
+		"/Users/Jason/automount",
+		"/Users/Jason/S99rush.sh",
+		"/Users/Jason/DigitalAddicts/rc.mount.sh",
+		"/Users/Jason/DigitalAddicts/rc.local_good.sh",
+		"/Users/Jason/DigitalAddicts/rc.local_backup3.sh",
+		"/Users/Jason/DigitalAddicts/rc.local_backup2.sh",
+		"/Users/Jason/DigitalAddicts/rc.local_backup1.sh",
+		"/Users/Jason/Desktop/hive2_mount",
+		"/Users/Jason/mount_command",
+		"/Users/Jason/Documents/message_tutoring",
+		"/Users/Jason/Desktop/sources.list",
+		"/Users/Jason/Desktop/rc.local_test.sh",
+		"/Users/Jason/Desktop/cifs_mount",
+		"/Users/Jason/Documents/user_list_dronearm003",
+		"/Users/Jason/Documents/user_list",
+		"/Users/Jason/Autodesk_Install.txt",
+		"/kickstart_install.txt",
+		"/Users/Jason/Desktop/NVIDIA_setup.sh",
+		"/Users/Jason/Desktop/ks_package_list.txt",
+		"/Users/Jason/Desktop/all_pkgs.txt",
+		"/Users/Jason/Desktop/ks_repos",
+		"/Users/Jason/CentOS/autodesk_burn_2016.2_LINUX64_RHEL6/dist/kickstart/build_kickstart_cd",
+		"/Users/Jason/anaconda-ks.cfg",
+		"/Users/Jason/Documents/Autodesk",
+		"/Users/Jason/Documents/linux_setup",
+		"/Users/Jason/Programming/Teknopoetx/techno_poet.py",
+		"/Users/Jason/Programming/Teknopoetx/archive/settings.py",
+		"/Users/Jason/Programming/Python/zipcodes.txt",
+		"/Users/Jason/Programming/raspberry_pi_network.txt",
+		"/Users/Jason/Programming/Web/policy",
+		"/Users/Jason/Programming/Python/hack_assembler/prog.txt",
+		"/Users/Jason/Programming/Python/hack_assembler/hack_assembler.py",
+		"/Users/Jason/Programming/Documents/job_search",
+		"/Users/Jason/Programming/Documents/Stanford_CS_Curriculum",
+		"/Users/Jason/Programming/C/cs50/workspace/clang_ex",
+		"/Users/Jason/Programming/Scheme/SICP/SICP_notes",
+		"/usr/include/math.h",
+		"/Users/Jason/Programming/nand2tetris/projects/02/ALU-nostat.out",
+		"/Users/Jason/Programming/C/CS50_info",
+		"/Users/Jason/.bash_profile",
+		"/Users/Jason/Programming/nand2tetris/Nond.out",
+		"/Users/Jason/Programming/nand2tetris/Ar.out",
+		"/Users/Jason/Programming/nand2tetris/tools/HardwareSimulator.sh",
+		"/Users/Jason/Programming/Documents/goals.txt",
+		"/Users/Jason/Documents/enp0s20u3",
+		"/Users/Jason/Programming/Web/Webpage/website_info",
+		"/Users/Jason/Programming/app_launch.py",
+		"/Users/Jason/Programming/Arch_Linux/index.html",
+		"/Users/Jason/Programming/Web/index.html",
+		"/Users/Jason/Programming/Cython/cython-book/chapter1/helloworld/helloworld.pyx",
+		"/Users/Jason/Programming/Cython/cython-book/chapter1/helloworld/helloworld.c",
+		"/Users/Jason/Programming/lapack-3.6.0/make.inc.example",
+		"/Users/Jason/.emacs.d/vendor/shr.el",
+		"/Users/Jason/OpenCV_Python/pyimagesearch/transform_example.py",
+		"/Users/Jason/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "bustime.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

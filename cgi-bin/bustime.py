@@ -40,16 +40,18 @@ def process_data(stop_id, json_obj):
         longitude = str(get_longitude(bus_info))
         busname = get_busname(bus_info)
         distance = str(round(get_distance(bus_info) * 0.000621371, 2))
-        return (latitude, longitude, distance, busname)
+        return latitude, longitude, distance, busname
 
-latitude  = process_data(stop_id, get_data(stop_id, url))[0]
-longitude = process_data(stop_id, get_data(stop_id, url))[1]
-distance  = process_data(stop_id, get_data(stop_id, url))[2]
-busname   = process_data(stop_id, get_data(stop_id, url))[3]
+lat  = process_data(stop_id, get_data(stop_id, url))[0]
+lng = process_data(stop_id, get_data(stop_id, url))[1]
+dis  = process_data(stop_id, get_data(stop_id, url))[2]
+bus   = process_data(stop_id, get_data(stop_id, url))[3]
 
-print "Content-Type: text/html\n\n"
 
-print """
+print 'Content-Type: text/html\n\n'
+
+
+print  """
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
 <head>
@@ -58,28 +60,34 @@ print """
     <title>Bustime NYC</title>
     <link media="screen" type="text/css" href="/css/mobile/mobile.css" rel="stylesheet"/>
 </head>
-<body background="/img/background.jpg">
+<body >
     <div id="banner">
         <h1>
-            <a href="/index"><img src="/img/banner.png" width="100%"/></a>
+            <a href=""><img src="/img/banner.png" width="100%"/></a>
         </h1>
     </div>
-    <div id="searchPanel">
-        <form id="index" name="index" action="#" onsubmit="return false;">
-            <input value="" placeholder="Enter Stop Code: " class="q" name="q" id="bustimesearch" type="text"/>
-            <input alt="search" id="submitButton" class="s" type="submit" onclick="getData();"/>
-            <input type="image" src="/img/search_icon.png" class="s"/>
+    <div id="userInput">
+        <form id="inputForm" name="inputForm" action="#" onsubmit="return false;">
+            <input value="" placeholder="Enter Stop Code: " class="textInput" name="textInput" id="bustimesearch" type="text"/>
+            <button type="submit" class="submitButton" id="submitButton" onclick="getData();">
+                <input type="image" src="/img/search_icon.png" class="submitButton"/>
+            </button>
         </form>
     </div>
-    <div id="content">
+    <div id="main">
         <?xml version="1.0" encoding="UTF-8"?>
         <div class="busmap">
-            <h2><span style="color:white;">"""+busname+""" Bus is</span>&nbsp;
-            <span style="color:red">"""+distance+"""</span>&nbsp;<span style="color:white;">Miles Away</span></h2>
+            <div id="results">
+                <h1>
+                    <span style="color:white;">"""+bus+""" Bus is</span>&nbsp;
+                    <span style="color:red">"""+dis+"""</span>&nbsp;
+                    <span style="color:white;">Miles Away</span>
+                </h1>
+            </div>
             <div id="map"></div>
             <script>
                 function initMap() {
-                    var myLatLng = {lat: """ + latitude + """, lng: """ + longitude + """};
+                    var myLatLng = {lat: """ + lat + """, lng: """ + lng + """};
 
                     var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 15,
@@ -101,16 +109,14 @@ print """
             </script>
 
         </div>
-        <div class="sidebar">
-            <div class="welcome">
-                <h3>Example searches:</h3>
-                <ul class="examples">
-                    <li><span style="color:white;">Route: </span>&nbsp;B63 M5 Bx1</li>
-                    <li><span style="color:white;">Intersection: </span>&nbsp;Main st and Kissena Bl</li>
-                    <li><span style="color:white;">Stop Code: </span>&nbsp;200884</li>
-                    <li><span style="color:white;">Location: </span>&nbsp;10304</li>
-                </ul>
-            </div>
+        <div class="examples">
+            <h2>Example searches:</h2>
+            <ul>
+                <li>  <span style="color:white;">  Route: </span>&nbsp;B63 M5 Bx1</li>
+                <li>  <span style="color:white;">  Intersection: </span>&nbsp;Main st and Kissena Bl</li>
+                <li>  <span style="color:white;">  Stop Code: </span>&nbsp;200884</li>
+                <li>  <span style="color:white;">  Location: </span>&nbsp;10304</li>
+            </ul>
         </div>
     </div>
     <div id="footer">
@@ -119,11 +125,10 @@ print """
     <script>
     function getData(){
         var stopNum = document.getElementById('bustimesearch').value;
-        var url = 'http://localhost:8000/cgi-bin/bustime.py?StopId='+ stopNum;
+        var url = 'http://10.0.0.7:8000/cgi-bin/bustime.py?StopId='+ stopNum;
         window.open(url, "_self");
     }
     </script>
 </body>
 </html>
-
 """
